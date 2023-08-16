@@ -1,0 +1,175 @@
+\documentclass[12pt,oneside,titlepage,a4paper]{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,trees,positioning,calc}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{tabularray}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage[most]{colortbl}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{ccicons}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\geometry{a4paper,
+	left=0.1cm,
+	right=0.1cm,
+	top=0.1cm,
+	bottom=0.1cm
+}
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{titleBack}{RGB}{0,66,21}
+\title{QuantitiveBytes}
+\date{}
+\begin{document}
+	
+	\tcbset{colframe=gray!95!black,colback=titleBack,arc=0mm}
+	
+	\begin{tcolorbox}
+		\begin{minipage}{4.5cm}
+			\newlength\mywidth\setlength\mywidth{2.6cm}
+			\tikz\node[circle,draw,minimum size=1.2\mywidth,
+			fill=white,
+			text=white,
+			path picture={
+				\node at (path picture bounding box.center){
+					\includegraphics[width=1.2\mywidth,angle=90]{zuco3}
+				};
+			}]{};
+		\end{minipage}
+		\begin{minipage}{15cm}
+			\begin{center}
+				\Huge{\textcolor{white}{PATI\~NO JAUJA}}\\
+				\vspace*{0.5cm}
+				\Large{\textcolor{white}{\emph{Desarrollador de softwares|Data science}}}
+			\end{center}
+		\end{minipage}
+	\end{tcolorbox}
+	\tcbset{colframe=white,colback=white,arc=0mm}
+	
+	\begin{tcolorbox}
+		\begin{minipage}[t]{8cm}
+			\vspace*{-0.5cm}
+			\begin{tcolorbox}[grow to left by=0.6cm,colback=gray!125,colframe=white]
+				\section*{\footnotesize Perfil}
+				Egresante de la Escuela Profesional de Economía. Me caracterizo por ser flexible, autodidacta, innovador y proactivo, siempre buscando potenciar mis conocimientos. He conseguido ser el alumno más sobresaliente en los cursos de análisis matemático $1$ \& $2$, en los curos de estadística $1$ \& $2$ y en econometría $1$ \& $2$. ~Trabajo como ayudante en una empresa familiar como guía de turismo, siempre mostrando compromiso, responsabilidad y eficiencia.~ Deseo comenzar a trabajar en el sector para aplicar mis conocimientos y ofrecer ayuda a su compañía.
+				
+				\section*{\footnotesize Contactos}
+				\begin{tabular}{r l}
+					Tel:  & +51 986 432 621 \\
+					Email: & 161861@unsaac.edu.pe
+				\end{tabular}
+				
+				\section*{\footnotesize Conocimientos}
+				\begin{itemize}
+					\item Micro econometría \&  Macro econometría
+					\item Evaluación de impacto de programas sociales \& políticas publicas
+					\item Stata nivel avanzado
+					\item EViews nivel avanzado
+					\item RStudio nivel avanzado~(RMarkdown)
+					\item \LaTeX~a nivel avanzado
+					\item Excel~(VBA)
+					\item Python nivel básico
+					\item HTML nivel avanzado
+				\end{itemize}
+				\section*{\footnotesize Intereses}
+				Aplicar conocimientos técnicos, teóricos \& prácticos aprendidos durante el tiempo que lleve como estudiante de economía en la universidad con el fin de beneficiar a la organización \& desarrollarme de forma profesional \& personal.
+				
+			\end{tcolorbox}
+		\end{minipage}
+		
+		\hspace{0.01pt}
+		
+		\begin{minipage}[t]{10cm}
+			\vspace*{-0.5cm}
+			\begin{tcolorbox}[grow to right by=0.75cm,colframe=white,colback=white]
+				\section*{Formaci\'on \& estudios} 
+				\begin{itemize}
+					\item {
+						\textbf{Universidad Nacional de San Antonio Abad del Cusco}\\
+						\emph{Facultad de econom\'ia}\\
+						\emph{2017-2022}
+					}
+				\end{itemize}
+				\section*{Historial laboral}
+				\begin{itemize}
+					\item {
+						\textbf{Gu\'ia tur\'istico}\\
+						\emph{Actividad tur\'istica}\\
+						\emph{2007-Presente}\\
+						En la microempresa familiar brindando servicios tur\'isticos locales, nacionales e internacionales
+					}
+					\item{
+						\textbf{Data analysis}\\
+						\emph{Banco de Cr\'edito del Per\'u}\\
+						\emph{2021}\\
+						Como estudiante de econom\'ia fui requerido por una empresa bancaria para hacer predicciones macro-micro y an\'alisis econ\'omico nacional y externa con data secundaria y empleando los softwares aprendidos durante la formaci\'on acad\'emica
+					}
+					\item{
+						\textbf{Ense\~nanza a estudiantes universitarios}\\
+						\emph{Software Excel}\\
+						\emph{2020}\\
+						Brinde servicio de ense\~nanza en la automatizaci\'on de Visual Basic for Applications~(\textit{VBA})
+					}
+					\item{
+						\textbf{J.R.D Mantenimiento y construccion S.A.C}\\
+						\emph{Asistente Administrativo}\\
+						\emph{2022-2023}\\
+						Proporcionar apoyo a  directores y empleados, asistir en las necesidades de la oficina diarias y gestionar las actividades administrativas.
+					}
+				\end{itemize}
+				
+				\section*{Idiomas}
+				\begin{itemize}
+					\item {
+						\textbf{Ingles}\\
+						\emph{Nivel b\'asico}
+					}
+					\item{
+						\textbf{Castellano}\\
+						\emph{Fluido}
+					}
+					\item{
+						\textbf{Quechua}\\
+						\emph{Fluido}
+					}
+				\end{itemize}
+				
+				% \end{itemize}
+			
+		\end{tcolorbox}
+	\end{minipage}
+\end{tcolorbox}
+
+\newpage
+
+\begin{tcolorbox}[colback=titleBack]
+	\textcolor{white}{PATI\~NO JAUJA}
+	\hspace*{\fill}{\textcolor{white}{Curriculum Vitae}}
+\end{tcolorbox}
+
+\tcbox[fonttitle=\bfseries,title=\center Carn\'e universitario]{
+	\begin{tabular}{l l}
+		\includegraphics[scale=0.56,angle=90]{dniA.jpg}   &  \includegraphics[scale=0.52,angle=90]{dniR.jpg}    
+	\end{tabular}
+}
+\tcbox[fonttitle=\bfseries,title=\center Carn\'e universitario]{
+	\begin{tabular}{l l}
+		\includegraphics[scale=0.56,angle=90]{ctA.jpg}   &  
+		\includegraphics[scale=0.52,angle=90]{ctR.jpg}
+	\end{tabular}
+}
+\vspace*{9.5cm}
+\center\includegraphics[scale=0.02,height=2cm,angle=180]{Untitled.png}\\[7pt]
+\vspace{-0.9cm}
+\center\rule{6cm}{0.4pt}
+\vspace{-0.3cm}
+\center \bfseries Pati\~no Jauja,\ Saturnino
+
+\end{document}
